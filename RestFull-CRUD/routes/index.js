@@ -67,7 +67,7 @@ router.post('/', function (req, res, next) {
   let sqlInsert = `INSERT INTO dbo.[cr-unit-attributes] (Unit,Cost,Hit_Speed) 
                      VALUES ('${unit.Unit}','${unit.Cost}','${unit.Hit_Speed}')`;
   executeQuery(res, unita, next, "unit", false);
-  res.send("unit", unita: [unit])
+  res.send("unit", unita : [unit])
 });
 
 
