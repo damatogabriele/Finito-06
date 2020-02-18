@@ -6,10 +6,10 @@ var router = express.Router();
 const sql = require('mssql');
 
 const config = {
-  user: '4DD_13',  //Vostro user name
+  user: '4DD_11',  //Vostro user name
   password: 'xxx123##', //Vostra password
   server: "213.140.22.237",  //Stringa di connessione
-  database: '4DD_13', //(Nome del DB)
+  database: '4DD_11', //(Nome del DB)
 }
 let executeQuery = function (res, query, next, pagina, sendData) {
   sql.connect(config, function (err) {
